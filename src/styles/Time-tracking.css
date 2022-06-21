@@ -1,0 +1,321 @@
+.frame-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    border: 1px solid red;
+}
+.group-15{
+   width: 766px;
+    height: 150px;
+}
+.email{
+    /* Email */
+        box-sizing: border-box;
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 15px;
+        gap: 10px;
+        width: 766px;
+        height: 44px;
+        /* white */
+        background: #FFFFFF;
+        /* systemGrey/500 */
+        border: 1px solid #9E9E9E;
+        border-radius: 10px;
+}
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    cursor: pointer;
+    
+}
+.title-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 1rem;
+}
+.button-outline{
+    /* Button/Outline */
+        box-sizing: border-box;
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px 22px;
+        gap: 10px;
+        width: 82px;
+        height: 35px;
+        /* light/secondary/origin */
+        border: 1px solid #3563E9;
+        border-radius: 10px;
+        color: #3563E9;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.46px;
+        cursor: pointer;
+}
+
+.button-contained{
+    /* Button/Contained */
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px 22px;
+        margin-right: 1rem;
+        gap: 10px;
+        width: 84px;
+        height: 35px;
+        background: #3563E9;
+        border-radius: 10px;
+        color: #FFFFFF;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.46px;
+        cursor: pointer;
+        
+}
+
+
+
+.started-at{
+    width: 156px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 1rem;
+    color: #000000;
+}
+.task-description{
+        width: 106px;
+        height: 16px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+}
+.timer{
+        width: 121px;
+        height: 19px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+}
+.rectangle{
+/* Rectangle 1 */
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    padding: 35px ;
+    width: 976px;
+    height: 220px;
+    background: #F7F7F7;
+    border-radius: 10px;
+     
+}
+.subtitle-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 57rem;
+    margin-top: 2rem;
+}
+
+.previous-tasks{
+    /* Previous Tasks */
+        width: 119px;
+        height: 19px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 1200 ;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+}
+.group-two{
+    /* Group 2 */
+        width: 976px;
+        height: 216px;
+}
+.group-three{
+/* Group 3 */
+    width: 924px;
+    height: 166px;
+}
+.rectangle-one{
+    /* Rectangle 1 */
+        padding: 25px 35px;
+        width: 976px;
+        height: 220px;
+        background: #F7F7F7;
+        border-radius: 10px;
+}
+.group-five{
+    /* Group 5 */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 921.9px;
+    height: 20.22px;
+       
+}
+.group-four{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 921.9px;
+        height: 20.22px;
+        margin-top: 2rem;
+}
+.group-six{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 921.9px;
+        height: 20.22px;
+        margin-top: 2rem;
+}
+.group-seven{
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 921.9px;
+        height: 20.22px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+        margin-top: 2rem;
+}
+.description{
+    /* Description */
+        width: 92.71px;
+        height: 20.22px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 1100;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        margin-right: 13rem;
+        
+}
+.end-time{
+    /* End Time */
+        width: 136.55px;
+        height: 20.22px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 1100;
+        font-size: 16px;
+        line-height: 19px; 
+        color: #000000;
+        
+}
+.start-time{
+/* Start Time */
+    width: 155.26px;
+    height: 20.22px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 1100;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.duration{
+    /* Duration */
+        width: 127.2px;
+        height: 20.22px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 1100;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        
+}
+.rectangle-two{
+/* Rectangle 2 */
+    width: 924px;
+    height: 1.06px;
+    background: #C4C4C4;
+}
+.task-description{
+    /* Went for a run outside with my dog buddy. */
+        width: 265.89px;
+        height: 17.03px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+}
+.task-end-time{
+/* 05:15:00 */
+    width: 101.01px;
+    height: 17.03px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+.task-start-time{
+/* 05:10:00 */
+    width: 101.01px;
+    height: 17.03px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+.task-duration{
+    /* 5 minutes */
+        width: 114.1px;
+        height: 17.03px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+}
