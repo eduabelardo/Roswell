@@ -7,6 +7,8 @@ export default function Timer() {
 	const [time, setTime] = useState({s: 0, m: 0, h: 0});
 	const [interv, setInterv] = useState();
 	const [input, setInput] = useState('');
+	const [disabled, setDisabled] = useState(false);
+	const [showDate, setShowDate] = useState('00:00:00');
 
 	var updatedSec = time.s;
 	var updatedMin = time.m;
@@ -16,10 +18,14 @@ export default function Timer() {
 		run();
 		setInterv(setInterval(run, 1000));
 		setInput('');
+		setDisabled(true);
+		setShowDate(date.toLocaleTimeString());
 	}
 	function stop() {
 		clearInterval(interv);
 		setTime({s: 0, m: 0, h: 0});
+		setDisabled(false);
+		setShowDate('00:00:00');
 	}
 
 	function run() {
@@ -51,9 +57,7 @@ export default function Timer() {
 			<div className='rectangle'>
 				<div className='group-15'>
 					<div className='title-container'>
-						<h1 className='started-at'>
-							Started at: {date.toLocaleTimeString()}
-						</h1>
+						<h1 className='started-at'>Started at: {showDate}</h1>
 						<h1 className='timer'>
 							Timer: {time.h >= 10 ? time.h : '0' + time.h}:
 							{time.m >= 10 ? time.m : '0' + time.m}:
@@ -71,10 +75,18 @@ export default function Timer() {
 						onChange={(e) => setInput(e.target.value)}
 					/>
 					<div className='buttons-container'>
-						<button className='button-contained' onClick={() => start()}>
+						<button
+							className='button-contained'
+							disabled={disabled}
+							onClick={() => start()}
+						>
 							Start
 						</button>
-						<button className='button-outline' onClick={() => stop()}>
+						<button
+							className='button-outline'
+							disabled={!disabled}
+							onClick={() => stop()}
+						>
 							Stop
 						</button>
 					</div>
